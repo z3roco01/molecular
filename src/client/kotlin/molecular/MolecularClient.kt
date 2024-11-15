@@ -1,6 +1,5 @@
 package molecular
 
-import molecular.Molecular
 import net.fabricmc.api.ClientModInitializer
 import org.slf4j.LoggerFactory
 
