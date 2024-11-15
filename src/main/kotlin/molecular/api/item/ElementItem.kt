@@ -1,4 +1,4 @@
-package molecular.item
+package molecular.api.item
 
 import molecular.Molecular
 import molecular.api.Element
@@ -28,5 +28,5 @@ class ElementItem(val element: Element): Item(Settings()) {
      * creates the text for the tooltip that has the atomic mass
      */
     fun getMassTooltip() = Text.translatable("item.${Molecular.MOD_ID}.element.tooltip.mass").append(": ${element.getMolarMass()}")
-        .append(Text.of("item.${Molecular.MOD_ID}.element.tooltip.mass_unit")).withColor(Colors.RED)
+        .append(Text.translatable("item.${Molecular.MOD_ID}.element.tooltip.mass_unit")).withColor(Colors.RED)
 }

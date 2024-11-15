@@ -1,6 +1,6 @@
 package molecular
 
-import molecular.item.ElementItem
+import molecular.api.item.ElementItem
 import molecular.util.ResourceUtil
 import net.fabricmc.api.ModInitializer
 import net.minecraft.registry.Registries
