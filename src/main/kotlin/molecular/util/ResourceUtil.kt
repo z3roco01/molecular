@@ -6,6 +6,7 @@ import molecular.api.Chemical
 import molecular.api.Element
 import java.io.File
 
+// TODO: for whole file, prob add more error checking
 object ResourceUtil {
     /**
      * returns all files in a resource directory
@@ -40,7 +41,7 @@ object ResourceUtil {
     /**
      * converts a json file to an [molecular.api.Element]
      * TODO: use one of the serialization libraries properly ( kotlinx/gson )
-     * @param file the [File] that is being serialized
+     * @param jsonElement the [JsonElement] that is being serialized into an [Element]
      * @return the [molecular.api.Element] with the data from the file
      */
     fun jsonToElement(jsonElement: JsonElement): Element {
@@ -62,4 +63,11 @@ object ResourceUtil {
 
         return Element(transKey, phase, meltingPoint, boilingPoint, colour, symbol, atomicMass, atomicNumber, family)
     }
+
+    /**
+     * simplifies turning a json file into an element
+     * @param file the file to become an element
+     * @return the [Element] that is contained in the json file
+     */
+    fun fileToElement(file: File) = jsonToElement(fileToJson(file))
 }

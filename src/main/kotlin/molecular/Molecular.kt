@@ -10,7 +10,7 @@ object Molecular : ModInitializer {
 
 	override fun onInitialize() {
 		var files = ResourceUtil.getFilesInDir("/data/molecular/elements")
-		logger.info(ResourceUtil.jsonToElement(ResourceUtil.fileToJson(files[0])).toString())
+		logger.info(ResourceUtil.fileToElement(files[0]).toString())
 
 		logger.info("common init done ! :D")
 	}
