@@ -1,0 +1,53 @@
+{
+	"schemaVersion": 1,
+	"id": "molecular",
+	"version": "${version}",
+	"name": "molecular",
+	"description": "chemistry library !",
+	"authors": [
+		"z3roco01"
+	],
+	"contact": {
+		"sources": "https://github.com/z3roco01/molecular",
+		"issues": "https://github.com/z3roco01/molecular/issues"
+	},
+	"license": "Unlicense",
+	"icon": "assets/molecular/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "molecular.Molecular",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "molecular.MolecularClient",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "molecular.MolecularDataGenerator",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"molecular.mixins.json",
+		{
+			"config": "molecular.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": ">=1.21",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	},
+	"suggests": {
+	}
+}
