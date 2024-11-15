@@ -34,7 +34,8 @@ class Element(transKey: String, phase: Phase, meltingPoint: Float, boilingPoint:
         HALOGENS("halogen"),
         NOBLE_GASES("noble_gas"),
         LANTHANIDES("lanthanide"),
-        ACTINIDES("actinide");
+        ACTINIDES("actinide"),
+        UNKNOWN("unknown");
 
         /**
          * returns a [Text] containing the translated [transKey]
