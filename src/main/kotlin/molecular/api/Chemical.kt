@@ -34,14 +34,33 @@ abstract class Chemical(val transKey: String, val phase: Phase, val meltingPoint
      * enum for using the 3 main phases of matter in code
      */
     enum class Phase(val transKey: String) {
-        SOLID("${Molecular.MOD_ID}.phase.solid"),
-        LIQUID("${Molecular.MOD_ID}.phase.liquid"),
-        GAS("${Molecular.MOD_ID}.phase.gas");
+        SOLID("solid"),
+        LIQUID("liquid"),
+        GAS("gas");
 
         /**
          * returns a [Text] containing the translated [transKey]
          * @return [Text.translatable] called on [transKey]
          */
-        fun translate() = Text.translatable(this.transKey)
+        fun translate() = Text.translatable("${Molecular.MOD_ID}.phase.${this.transKey}")
+
+        companion object {
+            /** attempts to find the phase that matches the string
+             * @param str the string that is attemping to be found
+             * @return the [Phase] that matches the string or null
+             */
+            fun fromString(str: String): Phase? {
+                // loop over every phase
+                Phase.entries.forEach{p ->
+                    // if the phases string matches the passed string
+                    if(p.transKey == str)
+                        //return it
+                        return p
+                }
+
+                // if no phase matches, return null
+                return null
+            }
+        }
     }
 }
