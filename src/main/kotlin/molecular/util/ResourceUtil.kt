@@ -7,6 +7,10 @@ import molecular.api.Element
 import java.io.File
 
 // TODO: for whole file, prob add more error checking
+/**
+ * handles resource files and json data
+ * @since version 0.0.1
+ */
 object ResourceUtil {
     /**
      * returns all files in a resource directory

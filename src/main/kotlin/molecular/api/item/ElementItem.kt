@@ -10,10 +10,13 @@ import net.minecraft.util.Colors
 
 /**
  * handles all items that are one element, not a compound
+ * @since version 0.0.1
  */
 class ElementItem(val element: Element): Item(Settings()) {
     override fun appendTooltip(stack: ItemStack, context: TooltipContext, tooltip: MutableList<Text>, type: TooltipType) {
         super.appendTooltip(stack, context, tooltip, type)
+        // add symbol, doesnt need translation since it is universal
+        tooltip.add(Text.of(element.symbol))
         tooltip.add(getFamilyTooltip())
         tooltip.add(getMassTooltip())
     }

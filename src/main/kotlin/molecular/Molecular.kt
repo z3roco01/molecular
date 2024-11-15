@@ -8,6 +8,10 @@ import net.minecraft.registry.Registry
 import net.minecraft.util.Identifier
 import org.slf4j.LoggerFactory
 
+/**
+ * common init, called on client and server
+ * @since version 0.0.1
+ */
 object Molecular : ModInitializer {
 	const val MOD_ID = "molecular"
     val logger = LoggerFactory.getLogger(MOD_ID)

@@ -2,6 +2,7 @@ package molecular.api
 
 /**
  * defines a specific compound ( 2 or more molecules of any element ) inherits from [Chemical] ( see it for other parameters )
+ * @since version 0.0.1
  * @param chemicals the list of chemicals in this compound mapped to their subscripts
  */
 class Compound(transKey: String, phase: Phase, meltingPoint: Float, boilingPoint: Float, colour: Int,  val chemicals: HashMap<Chemical, Int>):

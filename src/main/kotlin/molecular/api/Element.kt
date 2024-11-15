@@ -5,6 +5,7 @@ import net.minecraft.text.Text
 
 /**
  * describes a specific element, inherits from [Chemical] ( see it for the other parameters )
+ * @since version 0.0.1
  * @param symbol the symbol of this element ( ex Ne for neon )
  * @param atomicMass the standard atomic weight of this element, the same as molar mass so it is used in [molecular.api.Element.getMolarMass]
  * @param atomicNumber the atomic number of this element ( ex 5 for boron )

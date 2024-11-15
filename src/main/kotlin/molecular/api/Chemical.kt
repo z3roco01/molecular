@@ -5,6 +5,7 @@ import net.minecraft.text.Text
 
 /**
  * generic chemical, stores things shared by all types of chemicals ( elements, compounds ) for any points ( boiling/melting ) that dont exist at 1 atm, put -1 to mark it impossible
+ * @since version 0.0.1
  * @param transKey the end of the translation key for this element ( ex ammonium_nitrate for ammonium nitrate )
  * @param phase the chemicals phase at STP ( 273K, 1 atm ) uses the [Phase] enum ( ex gas for oxygen )
  * @param meltingPoint the melting/freezing point of this chemical at 1 atm in kelvin ( ex 1768K for cobalt )

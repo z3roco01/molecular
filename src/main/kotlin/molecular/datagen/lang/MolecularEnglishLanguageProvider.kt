@@ -6,6 +6,10 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider
 import net.minecraft.registry.RegistryWrapper
 import java.util.concurrent.CompletableFuture
 
+/**
+ * creates english lang file
+ * @since version 0.0.1
+ */
 class MolecularEnglishLanguageProvider(dataOutput: FabricDataOutput, registryLookup: CompletableFuture<RegistryWrapper.WrapperLookup>):
     FabricLanguageProvider(dataOutput, "en_us", registryLookup) {
     override fun generateTranslations(registryLookup: RegistryWrapper.WrapperLookup, translationBuilder: TranslationBuilder) {
