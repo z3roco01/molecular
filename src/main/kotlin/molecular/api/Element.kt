@@ -10,8 +10,8 @@ import net.minecraft.text.Text
  * @param atomicNumber the atomic number of this element ( ex 5 for boron )
  * @param tableFamily the family this element occupies in the periodic table, uses [TableFamily] ( ex post transition metals for aluminum )
  */
-class Element(transKey: String, phase: Phase, meltingPoint: Float, boilingPoint: Float, val symbol: String, val atomicWeight: Float, val atomicNumber: Int, val tableFamily: TableFamily) :
-    Chemical(transKey, phase, meltingPoint, boilingPoint) {
+class Element(transKey: String, phase: Phase, meltingPoint: Float, boilingPoint: Float, colour: Int, val symbol: String, val atomicWeight: Float, val atomicNumber: Int, val tableFamily: TableFamily) :
+    Chemical(transKey, phase, meltingPoint, boilingPoint, colour) {
 
     override fun getFormula() = symbol
 

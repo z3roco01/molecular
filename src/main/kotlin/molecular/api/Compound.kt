@@ -4,8 +4,8 @@ package molecular.api
  * defines a specific compound ( 2 or more molecules of any element ) inherits from [Chemical] ( see it for other parameters )
  * @param chemicals the list of chemicals in this compound mapped to their subscripts
  */
-class Compound(transKey: String, phase: Phase, meltingPoint: Float, boilingPoint: Float, val chemicals: HashMap<Chemical, Int>):
-    Chemical(transKey, phase, meltingPoint, boilingPoint) {
+class Compound(transKey: String, phase: Phase, meltingPoint: Float, boilingPoint: Float, colour: Int,  val chemicals: HashMap<Chemical, Int>):
+    Chemical(transKey, phase, meltingPoint, boilingPoint, colour) {
 
     override fun getFormula(): String {
         // start with empty formula
