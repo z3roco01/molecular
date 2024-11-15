@@ -29,7 +29,7 @@
 		],
 		"fabric-datagen": [
 			{
-				"value": "molecular.MolecularDataGenerator",
+				"value": "molecular.datagen.MolecularDataGenerator",
 				"adapter": "kotlin"
 			}
 		]
