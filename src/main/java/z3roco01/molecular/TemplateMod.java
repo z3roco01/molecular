@@ -1,4 +1,4 @@
-package com.example;
+package z3roco01.molecular;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.Identifier;

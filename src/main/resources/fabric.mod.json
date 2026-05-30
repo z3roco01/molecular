@@ -16,13 +16,13 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.example.TemplateMod"
+      "z3roco01.molecular.TemplateMod"
     ]
   },
   "mixins": [
-    "template.mixins.json"
+    "molecular.mixins.json"
   ],
-  "accessWidener": "template.ct",
+  "accessWidener": "molecular.ct",
   "depends": {
     "fabricloader": ">=0.17",
     "minecraft": "${minecraft}"

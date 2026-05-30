@@ -1,4 +1,4 @@
-package com.example.mixin;
+package z3roco01.molecular.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
