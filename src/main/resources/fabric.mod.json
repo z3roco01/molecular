@@ -16,7 +16,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "z3roco01.molecular.TemplateMod"
+      "z3roco01.molecular.Molecular"
     ]
   },
   "mixins": [
